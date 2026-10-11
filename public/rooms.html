@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кімнати спільного перегляду — YaAnimeGrib</title>
+  <meta name="description" content="YaAnimeGrib — розклад серій аніме з таймерами, каталог, відгуки та спільний перегляд легальних відео з друзями.">
+  <meta name="theme-color" content="#0f1512">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container page">
+    <div class="rooms-intro">
+      <div>
+        <h1 class="page__title">🍿 <span data-i18n="rooms.title"></span></h1>
+        <p class="muted" data-i18n="rooms.subtitle"></p>
+      </div>
+    </div>
+    <div class="rooms-layout">
+      <div>
+        <section class="section section--tight" id="my-rooms-section" hidden>
+          <h2 class="section__title" data-i18n="rooms.mine"></h2>
+          <div class="rooms-grid" id="my-rooms"></div>
+        </section>
+        <section class="section section--tight">
+          <h2 class="section__title" data-i18n="nav.rooms"></h2>
+          <div class="rooms-grid" id="rooms"></div>
+        </section>
+      </div>
+      <aside class="panel" id="create-box"></aside>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/rooms.js"></script>
+</body>
+</html>

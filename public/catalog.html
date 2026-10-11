@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог аніме — YaAnimeGrib</title>
+  <meta name="description" content="YaAnimeGrib — розклад серій аніме з таймерами, каталог, відгуки та спільний перегляд легальних відео з друзями.">
+  <meta name="theme-color" content="#0f1512">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container page">
+    <h1 class="page__title" id="title" data-i18n="catalog.title"></h1>
+    <form class="filters" id="filters">
+      <input class="field filters__q" type="search" name="q" data-i18n-placeholder="catalog.search" data-i18n-aria="catalog.search">
+      <select class="field" name="genre" data-i18n-aria="catalog.genre_all"><option value="" data-i18n="catalog.genre_all"></option></select>
+      <select class="field" name="format" data-i18n-aria="catalog.type_all">
+        <option value="" data-i18n="catalog.type_all"></option>
+        <option value="TV" data-i18n="format.TV"></option>
+        <option value="MOVIE" data-i18n="format.MOVIE"></option>
+        <option value="OVA" data-i18n="format.OVA"></option>
+        <option value="ONA" data-i18n="format.ONA"></option>
+        <option value="SPECIAL" data-i18n="format.SPECIAL"></option>
+      </select>
+      <select class="field" name="status" data-i18n-aria="catalog.status_all">
+        <option value="" data-i18n="catalog.status_all"></option>
+        <option value="RELEASING" data-i18n="status.RELEASING"></option>
+        <option value="FINISHED" data-i18n="status.FINISHED"></option>
+        <option value="NOT_YET_RELEASED" data-i18n="status.NOT_YET_RELEASED"></option>
+      </select>
+      <select class="field" name="sort">
+        <option value="POPULARITY_DESC" data-i18n="catalog.sort_popularity"></option>
+        <option value="TRENDING_DESC" data-i18n="catalog.sort_trending"></option>
+        <option value="SCORE_DESC" data-i18n="catalog.sort_score"></option>
+        <option value="START_DATE_DESC" data-i18n="catalog.sort_new"></option>
+      </select>
+      <button type="reset" class="btn btn--ghost" data-i18n="catalog.reset"></button>
+    </form>
+    <p class="muted" id="info"></p>
+    <div class="grid" id="grid"></div>
+    <div class="center"><button class="btn" id="more" hidden data-i18n="common.more"></button></div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/anilist.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
