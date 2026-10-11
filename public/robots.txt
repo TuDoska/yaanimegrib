@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /profile.html
+Disallow: /api/
+
+Sitemap: https://yaanimegrib.onrender.com/sitemap.xml
